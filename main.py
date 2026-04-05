@@ -21,7 +21,7 @@ logging.basicConfig(
 
 GOOGLE_API_KEY = os.getenv("ml_api")
 MODEL_ID = os.getenv("ML_MODEL", "gemini-2.5-flash")
-DATASET_NODE = "AI_LEARNING"
+DATASET_NODE = "WTF IS THIS AI"
 TOKEN = os.getenv("TOKEN")
 FIREBASE_CREDENTIALS = os.getenv("FIREBASE_CREDENTIALS")  
 FIREBASE_DB_URL = os.getenv("FIREBASE_DB_URL")            
