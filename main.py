@@ -22,7 +22,7 @@ logging.basicConfig(
 GOOGLE_API_KEY = os.getenv("ml_api")
 MODEL_ID = os.getenv("ML_MODEL", "gemini-2.5-flash")
 DATASET_NODE = "AI_LEARNING"
-
+TOKEN = os.getenv("TOKEN")
 FIREBASE_CREDENTIALS = os.getenv("FIREBASE_CREDENTIALS")  
 FIREBASE_DB_URL = os.getenv("FIREBASE_DB_URL")            
 
@@ -410,4 +410,4 @@ async def feed_dataset(ctx, file: discord.Attachment = None, text_input: str = N
 
 
 if __name__ == "__main__":
-    bot.run("MTQ5MDIzMjkzMjExNDIzOTc0MA.GAfInQ.NvqOY-gE74vz1ZlSN-cYiCbDC0D7FGrDB1ihU4")
+    bot.run(TOKEN)
